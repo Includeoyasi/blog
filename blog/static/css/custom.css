@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+}
+.content {
+  height: 100%;
+}
+.footer{
+    margin-top: 50px;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.rub{
+    text-decoration: underline;
+}
+.footer p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #bbb;
+}
+.logo{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.socialicon{
+    font-size: 22px;
+    vertical-align: middle
+}
+.miniatura{
+    max-width: 860px; 
+    min-width: 860px;
+}
+.center{
+    text-align: center;
+}
+.tags{
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+.tags i{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: 1px solid #fff;
+    background-color: #ddd;
+}
+a .rss{
+    font-size: 22px;
+    vertical-align: middle;
+}
+a .vk{
+    font-size: 22px;
+    vertical-align: middle;
+}
+a .google{
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.right{
+     text-align: right;
+}
+.right li{
+    text-align: right;
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #999; 
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+     cursor: pointer;
+}
+
+.article_text{
+     font-size: 16px;   
+}
+
+.info{
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.info i{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid #fff;
+
+}
+#likeicon{
+    width: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #444;
+    color: #444;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #666;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.white {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #444;     
+}
+.article{
+    padding-bottom: 100px;
+    padding-right: 10px;
+}
+

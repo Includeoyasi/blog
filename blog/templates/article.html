@@ -1,0 +1,38 @@
+﻿{% extends 'main.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block heading %}
+    <div>
+        <h4 class="right rub">Рубрики</h4>
+        <ui class="right">
+            {% for one in heading %}
+            <li><a href="{% url 'category' one.heading_alies %}">{{ one.heading_title }}</a></li>
+            {% endfor %}
+        </ui>
+    </div>
+{% endblock %}
+{% block article %}
+            <div class="article">
+                <img class="miniatura" src="{{ article.article_img.url }}" alt="">
+                <h1>{{article.article_title}}</h1>
+                <div class="info">
+                    <i>Время публикации: {{ article.article_date|date:"M d Y" }}</i>
+                    <i>Рубрика: {{ article.article_heading }}</i>
+                </div>
+                <div class="article_text">{{ article.article_text|safe|linebreaks }}</div>
+                <div class="tags">
+                    {% for tag in article.tags.all %}
+                      <a href="{% url 'category' tag.tag_alies %}"><i>{{ tag }}</i></a>
+                      {% if not forloop.last %}{% else %} {% endif %}
+                    {% endfor %}
+                </div>
+                <div style="padding-top: 35px;">
+                <a href="/articles/addlike/{{ article.alies }}#like">Нравится: <img id="likeicon" src="{% static 'img/heart-512.png' %}" alt=""> {{ article.article_likes }}</a>
+                </div>
+            </div>
+            <div id="disqus_thread">
+                {% load disqus_tags %}
+                {% disqus_show_comments %}
+            </div>
+
+{% endblock %}
